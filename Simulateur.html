@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latitude Simulation</title>
+  <link rel="stylesheet" href="simulateur.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</head>
+<body>
+  <div id="latitude" class="result"></div>
+  <div id="acceleration" class="result"></div>
+  <div class="container">
+    <div>
+    <label for="coordinates">Entrez les coordonnées (latitude, longitude) :</label>
+    <input type="text" id="coordinates" placeholder="Ex: 43°43'17&quot;N 79°28'25&quot;W">
+    <br>
+    <br>
+    <button onclick="entre_coordonnee_DMS()" class="button-resultat">Afficher résultat</button>
+</div>
+<br>
+<div>
+  <label for="coordinates_degree">Entrez les coordonnées (latitude, longitude) :</label>
+  <input type="text" id="coordinates_degree" placeholder="Ex: 48.8566, 2.3522">
+  <br>
+  <br>
+  <button onclick="entre_coordonnee_degree()" class="button-resultat">Afficher résultat</button>
+</div>
+</div>
+<div id="map"></div>
+<div id="arrow" class="arrow"></div>
+<div id="arrow-triangle" class="arrow-triangle"></div>
+<div class="echelle">
+  <p>0.1 : 100px</p>
+</div>
+<div class="button_ville">
+<button class="button-circle" type="button" onclick="allez_toronto()">TORONTO</button>
+<button class="button-circle" type="button" onclick="allez_mexico()">MEXICO</button>
+<button class="button-circle" type="button" onclick="allez_moscow()">MOSCOW</button>
+<button class="button-circle" type="button" onclick="allez_claudeb()">CLAUDE BERNARD (PARIS)</button>
+<button class="button-circle" type="button" onclick="allez_sydney()">SYDNEY</button>
+<button class="button-circle" type="button" onclick="allez_Portoalegre()">PORTO ALEGRE</button>
+<button class="button-circle" type="button" onclick="allez_kampala()">KAMPALA</button>
+<button class="button-circle" type="button" onclick="allez_BERLIN()">BERLIN</button>
+<button class="button-circle" type="button" onclick="allez_londre()">LONDRES</button>
+<button class="button-circle" type="button" onclick="allez_istanbul()">ISTANBUL</button>
+<button class="button-circle" type="button" onclick="allez_brasilia()">BRASILIA</button>
+<button class="button-circle" type="button" onclick="allez_oslo()">OSLO</button>
+<button class="button-circle" type="button" onclick="allez_sainteanne()">SAINTE-ANNE</button>
+</div>
+
+<script src="Simulateur.js"></script>
+</body>
+</html>
