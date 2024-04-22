@@ -197,6 +197,7 @@ label {
     transform: translateY(-2px);
   }
 
+  /* The switch - the box around the slider */
 .switch {
   font-size: 17px;
   position: absolute;
