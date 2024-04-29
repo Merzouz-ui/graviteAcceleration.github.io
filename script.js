@@ -154,11 +154,6 @@ var latlngs = [
 ];
 var equator = L.polyline(latlngs, {color: 'black'}).addTo(map);
 
-function affiche_fleche() {
-  arrow.classList.toggle("hidden");
-  arrow_triangle.classList.toggle("hidden");
-}
-
 var toronto = L.circle([43.6317, -79.3825], { 
   color: 'red',
   fillColor: '#f03',
