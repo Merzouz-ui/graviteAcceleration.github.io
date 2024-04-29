@@ -72,7 +72,6 @@ body{
   border-right: 30px solid transparent;
   z-index: 1000;
   pointer-events: none;
-  display: none;
 }
 .arrow {
   position: absolute;
@@ -82,7 +81,6 @@ body{
   height: 2px; 
   z-index: 1000;
   pointer-events: none;
-  display: none;
 }
 
 /*input*/
