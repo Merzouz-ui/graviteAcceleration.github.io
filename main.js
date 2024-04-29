@@ -141,9 +141,6 @@ function updateArrow(gravity) {
 
   var triangleTop = arrow.offsetTop + arrowHeight;
   arrow_triangle.style.top = triangleTop + 'px';
-
-  arrow.style.visibility = 'visible';
-  arrow_triangle.style.visibility = 'visible';
 }
 
 
